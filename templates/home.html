@@ -1,0 +1,68 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+    <title>Online Python Compiler</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron jumbotron-fluid mt-5">
+  <div class="container">
+    <h1 style="text-align:center;" class="font-italic mt-3 mb-5 display-4">Welcome to Python Languages World!</h1>
+    <p style="text-align:center;" class="lead mb-50">
+        Discover the endless possibilities of programming as you explore the power and versatility of Python.
+        Whether you're a beginner or an experienced coder, we're here to help you unlock your potential and dive into the exciting realm of coding!</p>
+
+    <div class="text-center">
+      <img src="{% static 'images/pylogo.png' %}" width="400" height="370" class="d-inline-block align-top" alt="">
+    </div>
+      <br><br>
+
+      <h2>Online Python Compiler</h2>
+      <p class="lead mb-50 text-justify">
+          Build, run, and share Python code online for free with our integrated Python development environment (IDE).
+          It's one of the most efficient, reliable, and powerful online compilers for the Python programming language.
+          There's no need to worry about setting up a Python environment on your local machine; you can execute your
+          Python code directly in any web browser. Using this Python editor is simple and quick to get started. Just
+          type in your program and hit the RUN button! You can also save your code online by selecting the SHARE option,
+          allowing you to access your code from anywhere with an internet connection.
+      </p>
+      <br><br>
+
+      <h2>About Python</h2>
+      <p class="lead mb-50 text-justify">
+        Python, initially developed by Guido van Rossum and released to the public in 1991, is now one of the most widely
+        used general-purpose programming languages. Its source code is freely available, and it can be used and distributed
+        without restrictions, even for commercial purposes. Python is popular for web development and can be used to create
+        virtually anything, including mobile apps, web applications, tools, data analytics, and machine learning applications.
+        Designed to be straightforward and easy to read, Python resembles the English language, making it simpler to learn
+        compared to languages like C++, Java, and C#. Its excellent productivity and efficiency have made it a favored choice
+        among developers worldwide.
+      </p>
+      <br><br>
+
+      <h2>Why Learn Python?</h2>
+      <p class="lead mb-50 text-justify">
+          Python is an accessible programming language that is easy to learn, thanks to its simple syntax and readable code.
+          It is versatile, finding applications in various domains such as rapid application development, data science, the
+          Internet of Things (IoT), and web development. Compared to many other programming languages, Python allows developers
+          to create applications with fewer lines of code, enhancing efficiency. The language boasts a large and active community,
+          providing numerous forums for users to engage and seek assistance. The availability of third-party modules significantly
+          expands Python's capabilities, enabling users to tackle complex problems with the help of robust support libraries like
+          NumPy for numerical computations and Pandas for data analytics. Additionally, Python features user-friendly data structures
+          that simplify code design and logic. As a result, the popularity of Python continues to grow, making it one of the most
+          widely used programming languages today.
+      </p>
+
+      <p class="lead mb-50 text-justify">
+          To learn more about Python, check out some of the following links:<ul>
+      <li><a href="https://www.python.org" target="_blank">Python.org</li>
+      <li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"> Wikipedia - Python </li>
+      <li><a href="https://www.w3schools.com/python/" target="_blank"> w3schools.com - Python Tutorial </li>
+      <li><a href="https://www.programiz.com/python-programming" target="_blank">programiz.com - Python Tutorial</li>
+          </ul>
+      </p>
+  </div>
+</div>
+
+{% endblock %}
