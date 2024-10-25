@@ -1,3 +1,4 @@
+pip --upgrade
 alabaster==0.7.13
 asgiref==3.7.2
 babel==2.16.0
