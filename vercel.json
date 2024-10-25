@@ -1,6 +1,6 @@
 {
   "builds": [{
-    "src": "online_python_compiler/wsgi.py",
+    "src": "online_python_compiler/manage.py",
     "use": "@vercel/python",
     "config": {"maxLambdaSize": "15mb", "runtime": "python3.9"}
   }],
