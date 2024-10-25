@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [{
     "src": "online_python_compiler/manage.py",
     "use": "@vercel/python",
