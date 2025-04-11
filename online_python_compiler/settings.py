@@ -1,4 +1,11 @@
+import os
 from pathlib import Path
+from dotenv import load_dotenv
+from urllib.parse import urlparse
+
+load_dotenv()
+tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -58,14 +65,19 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'online_python_compiler.wsgi.application'
 
+DtmpPostgres = urlparse(os.getenv("DATABASE_URL"))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'python_compiler',
-        'USER': 'python_compiler_owner',
-        'PASSWORD': 'npg_MI0nf8PByKAV',
-        'HOST': 'ep-spring-heart-a13jsj16-pooler.ap-southeast-1.aws.neon.tech',
-        'PORT': '5432',
+        'NAME': tmpPostgres.path[1:],
+        'USER': tmpPostgres.username,
+        'PASSWORD': tmpPostgres.password,
+        'HOST': tmpPostgres.hostname,
+        'PORT': tmpPostgres.port or 5432,
+        'OPTIONS': {
+            'sslmode': 'require',
+        }
     }
 }
 
@@ -96,9 +108,6 @@ TIME_ZONE = 'Asia/Kolkata'
 USE_I18N = True
 
 USE_TZ = True
-
-
-import os
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
