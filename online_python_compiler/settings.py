@@ -1,9 +1,6 @@
 import os
 from dotenv import load_dotenv
 from urllib.parse import urlparse
-
-load_dotenv()
-
 from pathlib import Path
 
 load_dotenv()
