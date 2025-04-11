@@ -4,8 +4,7 @@ from urllib.parse import urlparse
 from pathlib import Path
 
 load_dotenv()
-tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
-
+DtmpPostgres = urlparse(os.getenv("DATABASE_URL"))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
