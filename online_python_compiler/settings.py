@@ -1,7 +1,10 @@
 import os
-from pathlib import Path
 from dotenv import load_dotenv
 from urllib.parse import urlparse
+
+load_dotenv()
+
+from pathlib import Path
 
 load_dotenv()
 tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
@@ -74,7 +77,7 @@ DATABASES = {
         'USER': tmpPostgres.username,
         'PASSWORD': tmpPostgres.password,
         'HOST': tmpPostgres.hostname,
-        'PORT': tmpPostgres.port or 5432,
+        'PORT': 5432,
         'OPTIONS': {
             'sslmode': 'require',
         }
