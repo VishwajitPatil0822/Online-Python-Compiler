@@ -2,9 +2,7 @@ import os
 from dotenv import load_dotenv
 from urllib.parse import urlparse
 from pathlib import Path
-
-load_dotenv()
-DtmpPostgres = urlparse(os.getenv("DATABASE_URL"))
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -64,20 +62,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'online_python_compiler.wsgi.application'
 
-DtmpPostgres = urlparse(os.getenv("DATABASE_URL"))
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'your_db_name'),
-        'USER': os.environ.get('DB_USER', 'your_db_user'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'your_db_password'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
-        'OPTIONS': {
-            'sslmode': 'require',
-        }
-    }
+    'default': dj_database_url.config(
+        default=os.getenv("DATABASE_URL"),
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
 
 
