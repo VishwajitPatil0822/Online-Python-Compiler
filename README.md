@@ -45,7 +45,7 @@ This project stands out as an excellent choice for educational institutions, onl
   
 ## Screenshots
 
-**1. HOME Page** 
+**1. Home Page** 
 
 ![Home Page](screenshots/home.png)
 
@@ -108,7 +108,7 @@ git clone https://github.com/VishwajitPatil0822/Online-Python-Compiler.git
 
 If you have any questions, suggestions, or want to collaborate, feel free to reach out:
 
-- 💌 Email: [vishwajit22patil@gmail.com](mailto:vishwajit22patil@gmail.com)
+- 💌 Email: [vishwajit22patil@gmail.com](vishwajit22patil@gmail.com)
 
 - 🐙 GitHub: [github.com/VishwajitPatil0822](https://github.com/VishwajitPatil0822)
 
