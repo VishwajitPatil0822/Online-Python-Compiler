@@ -1,11 +1,10 @@
 {
-  "name": "django-vercel-deployment",
+  "name": "django-vercel",
   "version": "1.0.0",
-  "description": "Django project deployed on Vercel with Python backend and Node.js 22 build environment",
   "engines": {
     "node": "22.x"
   },
   "scripts": {
-    "build": "echo 'No frontend build step needed for Django'"
+    "vercel-build": "python3 manage.py collectstatic --noinput"
   }
 }
