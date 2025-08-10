@@ -23,5 +23,8 @@
       "src": "/(.*)",
       "dest": "online_python_compiler/wsgi.py"
     }
-  ]
+  ],
+  "hooks": {
+    "build": "python manage.py collectstatic --noinput"
+  }
 }
