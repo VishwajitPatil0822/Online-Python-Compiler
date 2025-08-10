@@ -78,8 +78,19 @@ ul {
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
   background-color: #24262a;
 }
-
-.example-2 .icon-content a[data-social="portfolio"] .filled,
-.example-2 .icon-content a[data-social="portfolio"] ~ .tooltip {
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
 }
