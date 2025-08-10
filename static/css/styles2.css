@@ -81,5 +81,5 @@ ul {
 
 .example-2 .icon-content a[data-social="portfolio"] .filled,
 .example-2 .icon-content a[data-social="portfolio"] ~ .tooltip {
-  background-color: #0274b3;
+  background-color: #ff0000;
 }
