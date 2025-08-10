@@ -3,6 +3,6 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "python manage.py collectstatic --noinput"
+    "build": "python3.9 manage.py collectstatic --noinput"
   }
 }
