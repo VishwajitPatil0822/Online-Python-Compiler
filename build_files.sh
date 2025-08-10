@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Install dependencies
 pip install -r requirements.txt
 
-# Run collectstatic
-python3 manage.py collectstatic --noinput
+python3.9 manage.py collectstatic
 
 # Ensure the static build folder exists
-mkdir -p static_build
+mkdir -p staticfiles_build
 
 # Move collected static files to the build folder
-# cp -r static/. static_build/
+cp -r static/. static_build/
