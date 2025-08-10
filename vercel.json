@@ -2,22 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "manage.py",
+      "src": "online_python_compiler/wsgi.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "staticfiles_build/**/*",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/staticfiles_build/$1"
+      "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "manage.py"
+      "dest": "online_python_compiler/wsgi.py"
     }
   ]
 }
