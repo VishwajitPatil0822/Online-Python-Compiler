@@ -90,7 +90,7 @@ ul {
     #fd1f1f
   );
 }
-.example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+.example-2 .icon-content a[data-social="portfolio"] .filled,
+.example-2 .icon-content a[data-social="portfolio"] ~ .tooltip {
   background-color: #ff0000;
 }
