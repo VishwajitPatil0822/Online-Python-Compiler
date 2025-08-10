@@ -1,6 +1,5 @@
 ﻿asgiref==3.8.1
 colorama==0.4.6
-distutils-pytest==0.2.1
 Django==4.2.6
 djongo
 dnspython==2.7.0
@@ -17,4 +16,5 @@ setuptools==78.1.0
 sqlparse==0.3.1
 tzdata==2025.1
 wheel==0.43.0
+
 
