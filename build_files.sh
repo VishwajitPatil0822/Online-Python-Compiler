@@ -1,7 +1,10 @@
 # build_files.sh
 
-# Create the directory where collected static files will be stored
+# Collect Django static files
+python3 manage.py collectstatic --noinput
+
+# Create the directory for static files build
 mkdir -p staticfiles_build
 
-# Copy existing static files into the build directory
-cp -r static/* staticfiles_build/ || true
+# Copy all collected static files into the build directory
+cp -r staticfiles/* staticfiles_build/
