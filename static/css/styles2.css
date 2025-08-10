@@ -78,8 +78,8 @@ ul {
 .example-2 .icon-content a[data-social="github"] ~ .tooltip {
   background-color: #24262a;
 }
+
 .example-2 .icon-content a[data-social="portfolio"] .filled,
 .example-2 .icon-content a[data-social="portfolio"] ~ .tooltip {
-  background-color: #ff0000;
+  background-color: #0274b3;
 }
-
