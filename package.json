@@ -1,10 +1,8 @@
 {
-  "name": "django-vercel",
+  "name": "django-vercel-app",
   "version": "1.0.0",
+  "private": true,
   "engines": {
     "node": "22.x"
-  },
-  "scripts": {
-    "vercel-build": "python3 manage.py collectstatic --noinput"
   }
 }
