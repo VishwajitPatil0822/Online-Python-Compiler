@@ -10,4 +10,4 @@ python3 manage.py collectstatic --noinput
 mkdir -p static_build
 
 # Move collected static files to the build folder
-cp -r static/. static_build/
+# cp -r static/. static_build/
